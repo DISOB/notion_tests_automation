@@ -43,7 +43,7 @@ def test_update_database_schemabased(client):
             }
         }
     }
-    response = databases.update_database(notion_api_token=client.NOTION_API_TOKEN, database_id=client.DATABASE_ID, properties=properties)
+    response = databases.update_database(notion_api_token=client.NOTION_API_TOKEN, database_id=client.DATABASE_TO_UPDATE_ID, properties=properties)
 
     ResponseHandler.verify_response_code(200, response.status_code)
     ResponseHandler.verify_json_schema(UPDATE_DATABASE_RESPONSE_SCHEMA, response.json())

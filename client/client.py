@@ -4,9 +4,10 @@ class Client:
 
     #Сомнительно, но окей
     DATABASE_ID = "c860cb8ca7bf4e7eaba9d22fb9c61a57"
+    DATABASE_TO_UPDATE_ID = "d1a4e4084ddb499cab7d9496ede4855e"
     PARENT_PAGE_ID = "9a6a7be7edd349f588c9f066965d731c"
     PAGE_ID = "ad4c7a835a9c4b208c62fc6a54953051"
-    PRORERTY_ID = "?"
+    PRORERTY_ID = "title"
     BLOCK_ID = "5247382338cf487490245536cfcb22ec"
 
     # Maxim_Stoletov
