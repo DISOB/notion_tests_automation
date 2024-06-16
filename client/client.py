@@ -11,6 +11,9 @@ class Client:
     PROPERTY_ID = "title"
     BLOCK_ID = "5247382338cf487490245536cfcb22ec"
 
+    #Константа для проверки, что test_get_comments действительно работает
+    PAGE_WITHOUT_COMMENTS_ID = "e2fda964fe8f4d138062a7696f8b0f5f"
+
     # Maxim_Stoletov
     USER_ID = "4f2bb362-523d-4c44-b903-26d89eef6348"
 
