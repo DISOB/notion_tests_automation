@@ -4,3 +4,4 @@ class Client:
 
     #Сомнительно, но окей
     DATABASE_ID = "c860cb8ca7bf4e7eaba9d22fb9c61a57"
+    PARENT_PAGE_ID = "9a6a7be7edd349f588c9f066965d731c"
