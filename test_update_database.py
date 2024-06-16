@@ -1,10 +1,11 @@
 import pytest
 import allure
-from client.databases.update_database.model import UPDATE_RESPONSE_SCHEMA
+from client.databases.update_database.model import UPDATE_DATABASE_RESPONSE_SCHEMA
 from client.databases.update_database.api import Databases
 from client.common.base_class import ResponseHandler
 
-# ERROR 500
+# ERROR 500 FIXED
+# добавляет propepty status (с маленькой буквы) в database
 
 @pytest.mark.schemabased
 @allure.feature("databases")
@@ -15,7 +16,7 @@ from client.common.base_class import ResponseHandler
 def test_update_database_schemabased(client):
     databases = Databases(client.NOTION_API_BASE_URL)
     properties = {
-        "Status": {
+        "status": {
             "select": {
                 "options": [
                     {
@@ -45,4 +46,4 @@ def test_update_database_schemabased(client):
     response = databases.update_database(notion_api_token=client.NOTION_API_TOKEN, database_id=client.DATABASE_ID, properties=properties)
 
     ResponseHandler.verify_response_code(200, response.status_code)
-    ResponseHandler.verify_json_schema(UPDATE_RESPONSE_SCHEMA, response.json())
+    ResponseHandler.verify_json_schema(UPDATE_DATABASE_RESPONSE_SCHEMA, response.json())

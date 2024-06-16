@@ -1,67 +1,86 @@
-UPDATE_RESPONSE_SCHEMA = {
+UPDATE_DATABASE_RESPONSE_SCHEMA = {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
     "properties": {
-        "object": {"type": "string"},
-        "id": {"type": "string"},
-        "created_time": {"type": "string", "format": "date-time"},
-        "last_edited_time": {"type": "string", "format": "date-time"},
-        "title": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "type": {"type": "string"},
-                    "text": {
-                        "type": "object",
-                        "properties": {
-                            "content": {"type": "string"},
-                            "link": {"type": ["null", "object"]}
-                        },
-                        "required": ["content"]
-                    },
-                    "annotations": {
-                        "type": "object",
-                        "properties": {
-                            "bold": {"type": "boolean"},
-                            "italic": {"type": "boolean"},
-                            "strikethrough": {"type": "boolean"},
-                            "underline": {"type": "boolean"},
-                            "code": {"type": "boolean"},
-                            "color": {"type": "string"}
-                        },
-                        "required": ["bold", "italic", "strikethrough", "underline", "code", "color"]
-                    },
-                    "plain_text": {"type": "string"},
-                    "href": {"type": ["null", "string"]}
-                },
-                "required": ["type", "text", "annotations", "plain_text"]
-            }
+        "object": {
+            "type": "string"
         },
-        "properties": {
+        "id": {
+            "type": "string",
+            "format": "uuid"
+        },
+        "created_time": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "last_edited_time": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "created_by": {
             "type": "object",
-            "additionalProperties": {
-                "type": "object",
-                "properties": {
-                    "id": {"type": "string"},
-                    "name": {"type": "string"},
-                    "type": {"type": "string"}
+            "properties": {
+                "object": {
+                    "type": "string"
                 },
-                "required": ["id", "name", "type"],
-                "additionalProperties": True
-            }
+                "id": {
+                    "type": "string",
+                    "format": "uuid"
+                }
+            },
+            "required": ["object", "id"]
+        },
+        "last_edited_by": {
+            "type": "object",
+            "properties": {
+                "object": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string",
+                    "format": "uuid"
+                }
+            },
+            "required": ["object", "id"]
+        },
+        "cover": {
+            "type": ["null", "object"]
+        },
+        "icon": {
+            "type": ["null", "object"]
         },
         "parent": {
             "type": "object",
             "properties": {
-                "type": {"type": "string"},
-                "page_id": {"type": "string", "format": "uuid"}
+                "type": {
+                    "type": "string"
+                },
+                "workspace": {
+                    "type": "boolean"
+                }
             },
-            "required": ["type", "page_id"]
+            "required": ["type", "workspace"]
         },
-        "archived": {"type": "boolean"},
-        "is_inline": {"type": "boolean"},
-        "public_url": {"type": ["null", "string"]}
+        "archived": {
+            "type": "boolean"
+        },
+        "in_trash": {
+            "type": "boolean"
+        },
+        "properties": {
+            "type": "object",
+            "additionalProperties": True
+        },
+        "url": {
+            "type": "string",
+            "format": "uri"
+        },
+        "public_url": {
+            "type": ["null", "string"]
+        },
+        "request_id": {
+            "type": "string"
+        }
     },
-    "required": ["object", "id", "created_time", "last_edited_time", "title", "properties", "parent", "archived", "is_inline"]
+    "required": ["object", "id", "created_time", "last_edited_time", "created_by", "last_edited_by", "parent", "archived", "properties"]
 }
