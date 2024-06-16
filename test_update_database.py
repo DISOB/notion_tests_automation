@@ -4,6 +4,8 @@ from client.databases.update_database.model import UPDATE_RESPONSE_SCHEMA
 from client.databases.update_database.api import Databases
 from client.common.base_class import ResponseHandler
 
+# ERROR 500
+
 @pytest.mark.schemabased
 @allure.feature("databases")
 @allure.severity("allure.severity_level.CRITICAL")
