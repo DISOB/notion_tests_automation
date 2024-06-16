@@ -1,5 +1,6 @@
 import pytest
 import allure
+import random
 from client.databases.create_database.model import CREATE_RESPONSE_SCHEMA
 from client.databases.create_database.api import Databases
 from client.common.base_class import ResponseHandler
@@ -12,7 +13,8 @@ from client.common.base_class import ResponseHandler
 @allure.suite("schemabased")
 def test_create_database_schemabased(client):
     databases = Databases(client.NOTION_API_BASE_URL, client.PARENT_PAGE_ID)
-    title = "Example Database"
+    random_number = random.randint(1000, 9999)
+    title = f"Example Database {random_number}"
     properties = {
         "Name": {
             "title": {}
