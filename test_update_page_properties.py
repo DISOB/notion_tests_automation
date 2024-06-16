@@ -13,9 +13,9 @@ from client.common.base_class import ResponseHandler
 @allure.suite("schemabased")
 def test_update_page_properties_schemabased(client):
     pages = Pages(client.NOTION_API_BASE_URL)
-    page_id = client.PAGE_ID
+    page_id = client.PAGE_TO_UPDATE_ID
     random_number = random.randint(1000, 9999)
-    new_title = f"Updated Page Title {random_number}"
+    new_title = f"Page to update. Updated Page Title {random_number}"
     properties = {
         "title": {
             "title": [
