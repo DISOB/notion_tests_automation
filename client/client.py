@@ -1,5 +1,7 @@
+import os
+
 class Client:
-    NOTION_API_TOKEN = 'secret_5Lpj2BEAhzdIEzoXXGPZRDyvkHCoAT4Ms6hyxzuIesM'
+    NOTION_API_TOKEN = os.getenv("NOTION_TOKEN")
     NOTION_API_BASE_URL = "https://api.notion.com"
 
     #Сомнительно, но окей
