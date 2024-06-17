@@ -2,7 +2,7 @@ name: test
 
 on:
   push:
-    branches: [ "test-branch" ]
+    branches: [ "master" ]
 
 jobs:
   tests:
@@ -46,12 +46,17 @@ jobs:
           name: Results
           path: ./allure-results
 
+      - name: Delete results
+        uses: geekyeggo/delete-artifact@v5
+        with:
+          name: Results
+
       - name: Allure report
         uses: esemi/action-allure-report@v0.2.0
 
       - name: Upload results
         uses: actions/upload-artifact@v4.3.3
         with:
-          name: Results
+          name: allure-report
           path: ./allure-report
           overwrite: true
