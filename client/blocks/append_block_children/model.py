@@ -68,3 +68,33 @@ APPEND_BLOCK_CHILDREN_RESPONSE_SCHEMA = {
     },
     "required": ["object", "results"]
 }
+
+
+APPEND_BLOCK_CHILDREN_RESPONSE_SCHEMA_401 = {
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "object": {
+      "type": "string"
+    },
+    "status": {
+      "type": "integer"
+    },
+    "code": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "request_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "object",
+    "status",
+    "code",
+    "message",
+    "request_id"
+  ]
+}
