@@ -27,6 +27,22 @@ jobs:
       - name: Run pytest
         run: pytest
 
-      - name: Allure report
+      - name: Upload results
         if: always()
+        uses: actions/upload-artifact@v4.3.3
+        with:
+          name: Results
+          path: ./allure-results
+
+  gen_tests:
+    name: Generate test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download results
+        uses: actions/download-artifact@v4
+        with:
+          name: Results
+
+      - name: Allure report
         uses: afiore/action-allure-report@v0.1.0
