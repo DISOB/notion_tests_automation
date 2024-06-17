@@ -1,10 +1,10 @@
 import os
 
 class Client:
-    if os.getenv("NOTION_TOKEN") != '':
+    if os.getenv("NOTION_TOKEN") is not None:
         NOTION_API_TOKEN = os.getenv("NOTION_TOKEN")
     else:
-        NOTION_API_TOKEN = open('token').readline()
+        NOTION_API_TOKEN = open('token').readline().strip()
 
     NOTION_API_BASE_URL = "https://api.notion.com"
 
