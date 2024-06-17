@@ -1,0 +1,31 @@
+name: test
+
+on:
+  push:
+    branches: [ "test-branch" ]
+
+jobs:
+  tests:
+    name: Tests
+    runs-on: windows-latest
+
+    steps:
+      - name: Install python
+        uses: actions/actions/setup-python@v5.1.0
+        with:
+          python-version: 3.9
+
+      - name: Install requirements
+        run: pip install -r requirements.txt
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create token file
+        run: echo "${{ secrets.NOTION_API_TOKEN }}" > token
+
+      - name: Run pytest
+        run: pytest
+
+      - name: Allure report
+        uses: afiore/action-allure-report@v0.1.0
