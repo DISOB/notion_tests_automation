@@ -4,7 +4,6 @@ from client.pages.retrieve_page_property.model import RETRIEVE_PAGE_PROPERTY_RES
 from client.pages.retrieve_page_property.api import Pages
 from client.common.base_class import ResponseHandler
 
-# Не хватает property_id в client. Нужно узнать, как получить property_id
 
 @pytest.mark.schemabased
 @allure.feature("pages")

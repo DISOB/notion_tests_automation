@@ -11,7 +11,7 @@ class Client:
     PAGE_TO_UPDATE_ID = "d6f3fc9a49424ce09235c35ec97f1506"
     PAGE_FOR_GET_CHILD_ID = "6176f1857c004c1b9c819740c2346241"
     PROPERTY_ID = "title"
-    BLOCK_ID = "5247382338cf487490245536cfcb22ec"
+    BLOCK_ID = "a8e123579acf4820b628b17fee973877"
 
     #Константа для проверки, что test_get_comments действительно работает
     PAGE_WITHOUT_COMMENTS_ID = "e2fda964fe8f4d138062a7696f8b0f5f"
