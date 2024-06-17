@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.9 (API_testing)" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9 (API_testing)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (notion_tests_automation_new)" project-jdk-type="Python SDK" />
 </project>
