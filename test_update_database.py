@@ -4,8 +4,6 @@ from client.databases.update_database.model import UPDATE_DATABASE_RESPONSE_SCHE
 from client.databases.update_database.api import Databases
 from client.common.base_class import ResponseHandler
 
-# ERROR 500 FIXED
-# добавляет propepty status (с маленькой буквы) в database
 
 @pytest.mark.schemabased
 @allure.feature("databases")
