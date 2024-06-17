@@ -22,10 +22,11 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Create token file
-        run: echo "${{ secrets.NOTION_API_TOKEN }}" > token
+        run: echo "${{ secrets.NOTION_API_TOKEN }}" > ./client/token
 
       - name: Run pytest
         run: pytest
 
       - name: Allure report
+        if: always()
         uses: afiore/action-allure-report@v0.1.0
