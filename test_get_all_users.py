@@ -9,7 +9,7 @@ from client.users.get_all_users.model import RESPONSE_SCHEMA
 @pytest.mark.schemabased
 @allure.feature("users")
 @allure.severity("allure.severity_level.CRITICAL")
-@allure.description("Verify that <add desc>")
+@allure.description("Verify that <Users are received correctly>")
 @allure.parent_suite("users")
 @allure.suite("schemabased")
 def test_get_all_users_schemabased(client):
