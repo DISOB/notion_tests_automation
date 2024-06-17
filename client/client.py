@@ -4,7 +4,6 @@ class Client:
     NOTION_API_TOKEN = os.getenv("NOTION_TOKEN")
     NOTION_API_BASE_URL = "https://api.notion.com"
 
-    #Сомнительно, но окей
     DATABASE_ID = "c860cb8ca7bf4e7eaba9d22fb9c61a57"
     DATABASE_TO_UPDATE_ID = "d1a4e4084ddb499cab7d9496ede4855e"
     PARENT_PAGE_ID = "9a6a7be7edd349f588c9f066965d731c"
