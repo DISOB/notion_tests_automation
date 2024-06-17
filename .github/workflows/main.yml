@@ -48,3 +48,10 @@ jobs:
 
       - name: Allure report
         uses: esemi/action-allure-report@v0.2.0
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4.3.3
+        with:
+          name: Results
+          path: ./allure-report
+          overwrite: true
