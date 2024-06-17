@@ -25,7 +25,7 @@ QUERY_RESPONSE_SCHEMA = {
 }
 
 
-QUERY_RESPONSE_SCHEMA_401 = {
+QUERY_RESPONSE_SCHEMA_400_401_404 = {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {

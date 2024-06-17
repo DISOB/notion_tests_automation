@@ -207,7 +207,7 @@ GET_BLOCK_CHILDREN_RESPONSE_SCHEMA = {
 }
 
 
-GET_BLOCK_CHILDREN_RESPONSE_SCHEMA_401 = {
+GET_BLOCK_CHILDREN_RESPONSE_SCHEMA_401_404 = {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {

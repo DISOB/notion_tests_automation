@@ -87,4 +87,6 @@ def test_delete_block_schemabased_unauthorized(client):
     response = delete_blocks.delete_block(notion_api_token=NOTION_INVALID_API_TOKEN, block_id=block_id)
 
     ResponseHandler.verify_response_code(401, response.status_code)
-    ResponseHandler.verify_json_schema(DELETE_BLOCK_RESPONSE_SCHEMA_401, response.json())
+    ResponseHandler.verify_json_schema(DELETE_BLOCK_RESPONSE_SCHEMA_400_401_404, response.json())
+
+

@@ -34,7 +34,7 @@ GET_USER_RESPONSE_SCHEMA = {
 }
 
 
-GET_USER_RESPONSE_SCHEMA_401 = {
+GET_USER_RESPONSE_SCHEMA_401_404 = {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {

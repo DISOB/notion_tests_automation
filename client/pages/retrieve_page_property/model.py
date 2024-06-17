@@ -145,7 +145,7 @@ RETRIEVE_PAGE_PROPERTY_RESPONSE_SCHEMA = {
 }
 
 
-RETRIEVE_PAGE_PROPERTY_RESPONSE_SCHEMA_401 = {
+RETRIEVE_PAGE_PROPERTY_RESPONSE_SCHEMA_401_404 = {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {

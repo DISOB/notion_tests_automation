@@ -42,7 +42,7 @@ RESPONSE_SCHEMA = {
 }
 
 
-RESPONSE_SCHEMA_401 = {
+RESPONSE_SCHEMA_400_401 = {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {

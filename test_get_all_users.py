@@ -1,5 +1,7 @@
 import pytest
 import allure
+import requests
+
 from client.common.base_class import ResponseHandler
 from client.users.get_all_users.api import Users
 from client.users.get_all_users.model import*
@@ -32,3 +34,7 @@ def test_get_all_users_schemabased_unauthorized(client):
 
     ResponseHandler.verify_response_code(401, response.status_code)
     ResponseHandler.verify_json_schema(RESPONSE_SCHEMA_401, response.json())
+
+
+
+
