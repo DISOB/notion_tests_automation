@@ -48,16 +48,6 @@ def processing(client):
 @allure.parent_suite("blocks")
 @allure.suite("schemabased")
 def test_get_block_children_schemabased(client, processing):
-    """
-    Сложная функция:
-    1. создаются несколько блоков в цикле
-    2. сохраняются их id
-    3. происходит получение этих блоков
-    4. они все удаляются по сохраненным id
-    :param client:
-    :return:
-    """
-
     page_size = processing
 
     get_blocks = Get_Blocks(client.NOTION_API_BASE_URL)
