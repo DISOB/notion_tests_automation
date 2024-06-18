@@ -97,4 +97,25 @@ def test_get_block_children_schemabased_unauthorized(client, processing):
     # schema["properties"]["results"]["items"] *= page_size
 
     ResponseHandler.verify_response_code(401, response.status_code)
-    ResponseHandler.verify_json_schema(GET_BLOCK_CHILDREN_RESPONSE_SCHEMA_401, response.json())
+    ResponseHandler.verify_json_schema(GET_BLOCK_CHILDREN_RESPONSE_SCHEMA_401_404, response.json())
+
+
+@pytest.mark.schemabased
+@allure.feature("blocks")
+@allure.severity("allure.severity_level.CRITICAL")
+@allure.description("Verify that retrieving a block returns expected results")
+@allure.parent_suite("blocks")
+@allure.suite("schemabased")
+def test_get_block_children_invalid_parent_page_id(client, processing):
+    page_size = processing
+    invalid_parent_page_id = "be907abe-510e-4116-a3d1-7ea71018c06f"
+    get_blocks = Get_Blocks(client.NOTION_API_BASE_URL)
+    response = get_blocks.get_block_children(notion_api_token=client.NOTION_API_TOKEN, page_id=invalid_parent_page_id, page_size=page_size)
+
+    # schema = copy.deepcopy(GET_BLOCK_CHILDREN_RESPONSE_SCHEMA)
+    # schema["properties"]["results"]["items"] *= page_size
+
+    ResponseHandler.verify_response_code(404, response.status_code)
+    ResponseHandler.verify_json_schema(GET_BLOCK_CHILDREN_RESPONSE_SCHEMA_401_404, response.json())
+
+

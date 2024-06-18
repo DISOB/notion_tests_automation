@@ -52,7 +52,7 @@ CREATE_RESPONSE_SCHEMA = {
 }
 
 
-CREATE_RESPONSE_SCHEMA_401 = {
+CREATE_PAGE_RESPONSE_SCHEMA_400_401_404 = {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {

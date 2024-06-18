@@ -32,4 +32,21 @@ def test_search_by_title_schemabased_unauthorized(client):
     response = search.search_by_title(notion_api_token=NOTION_INVALID_API_TOKEN, query=query)
 
     ResponseHandler.verify_response_code(401, response.status_code)
-    ResponseHandler.verify_json_schema(RESPONSE_SCHEMA_401, response.json())
+    ResponseHandler.verify_json_schema(RESPONSE_SCHEMA_400_401, response.json())
+
+
+@pytest.mark.schemabased
+@allure.feature("search")
+@allure.severity("allure.severity_level.CRITICAL")
+@allure.description("Verify that searching by title returns expected results")
+@allure.parent_suite("search")
+@allure.suite("schemabased")
+def test_search_by_title_validation_error(client):
+    search = Search(client.NOTION_API_BASE_URL)
+    query = 1234
+    response = search.search_by_title(notion_api_token=client.NOTION_API_TOKEN, query=query)
+
+    ResponseHandler.verify_response_code(400, response.status_code)
+    ResponseHandler.verify_json_schema(RESPONSE_SCHEMA_400_401, response.json())
+
+
