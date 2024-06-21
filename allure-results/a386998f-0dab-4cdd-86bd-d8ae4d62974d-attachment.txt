@@ -1,0 +1,10 @@
+[32mINFO    [0m client.common.base_class:base_class.py:17 
+
+
+REQUEST METHOD: POST
+REQUEST URL: https://api.notion.com/v1/comments
+REQUEST HEADERS: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer secret_5Lpj2BEAhzdIEzoXXGPZRDyvkHCoAT4Ms6hyxzuIesM', 'Notion-Version': '2022-06-28', 'Content-Type': 'application/json', 'Content-Length': '172'}
+REQUEST BODY: b'{"parent": {"type": "page_id", "page_id": "ad4c7a835a9c4b208c62fc6a54953051"}, "rich_text": [{"type": "text", "text": {"content": "This is a test comment", "link": null}}]}'
+
+RESPONSE STATUS CODE: 200
+RESPONSE BODY: {"object":"comment","id":"a97cf395-94cf-41d9-b658-c80ce63b7e48","parent":{"type":"page_id","page_id":"ad4c7a83-5a9c-4b20-8c62-fc6a54953051"},"discussion_id":"5cf3e51c-88b0-4f82-a7f8-971a86a0e96c","created_time":"2024-06-20T16:35:00.000Z","last_edited_time":"2024-06-20T16:35:00.000Z","created_by":{"object":"user","id":"360b4f56-f265-48dd-b844-fe5dc91d1b41"},"rich_text":[{"type":"text","text":{"content":"This is a test comment","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"This is a test comment","href":null}],"request_id":"98775611-97bf-446a-967b-7d8c50e0fbbe"}

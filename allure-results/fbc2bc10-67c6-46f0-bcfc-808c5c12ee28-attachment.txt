@@ -1,0 +1,10 @@
+[32mINFO    [0m client.common.base_class:base_class.py:17 
+
+
+REQUEST METHOD: PATCH
+REQUEST URL: https://api.notion.com/v1/pages/d6f3fc9a49424ce09235c35ec97f1506
+REQUEST HEADERS: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer secret_5Lpj2BEAhzdIEzoXXGPZRDyvkHCoAT4Ms6hyxzuIesM', 'Notion-Version': '2022-06-28', 'Content-Type': 'application/json', 'Content-Length': '104'}
+REQUEST BODY: b'{"properties": {"title": {"title": [{"text": {"content": "Page to update. Updated Page Title 1793"}}]}}}'
+
+RESPONSE STATUS CODE: 200
+RESPONSE BODY: {"object":"page","id":"d6f3fc9a-4942-4ce0-9235-c35ec97f1506","created_time":"2024-06-16T09:52:00.000Z","last_edited_time":"2024-06-20T16:36:00.000Z","created_by":{"object":"user","id":"4f2bb362-523d-4c44-b903-26d89eef6348"},"last_edited_by":{"object":"user","id":"360b4f56-f265-48dd-b844-fe5dc91d1b41"},"cover":null,"icon":null,"parent":{"type":"workspace","workspace":true},"archived":false,"in_trash":false,"properties":{"title":{"id":"title","type":"title","title":[{"type":"text","text":{"content":"Page to update. Updated Page Title 1793","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Page to update. Updated Page Title 1793","href":null}]}},"url":"https://www.notion.so/Page-to-update-Updated-Page-Title-1793-d6f3fc9a49424ce09235c35ec97f1506","public_url":null,"request_id":"82e8f3f0-9eed-4858-8d93-df2df712253c"}

@@ -1,0 +1,10 @@
+[32mINFO    [0m client.common.base_class:base_class.py:17 
+
+
+REQUEST METHOD: PATCH
+REQUEST URL: https://api.notion.com/v1/pages/be907abe-510e-4116-a3d1-7ea71018c06f
+REQUEST HEADERS: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer secret_5Lpj2BEAhzdIEzoXXGPZRDyvkHCoAT4Ms6hyxzuIesM', 'Notion-Version': '2022-06-28', 'Content-Type': 'application/json', 'Content-Length': '104'}
+REQUEST BODY: b'{"properties": {"title": {"title": [{"text": {"content": "Page to update. Updated Page Title 5149"}}]}}}'
+
+RESPONSE STATUS CODE: 404
+RESPONSE BODY: {"object":"error","status":404,"code":"object_not_found","message":"Could not find page with ID: be907abe-510e-4116-a3d1-7ea71018c06f. Make sure the relevant pages and databases are shared with your integration.","request_id":"5a9433a7-b809-4645-a692-1c0f1a6880f3"}

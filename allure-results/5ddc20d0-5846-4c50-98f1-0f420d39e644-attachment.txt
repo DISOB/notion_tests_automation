@@ -1,0 +1,10 @@
+[32mINFO    [0m client.common.base_class:base_class.py:17 
+
+
+REQUEST METHOD: GET
+REQUEST URL: https://api.notion.com/v1/users
+REQUEST HEADERS: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer INVALID_TOKEN', 'Notion-Version': '2022-06-28', 'Content-Type': 'application/json'}
+REQUEST BODY: None
+
+RESPONSE STATUS CODE: 401
+RESPONSE BODY: {"object":"error","status":401,"code":"unauthorized","message":"API token is invalid.","request_id":"4d8af900-9605-4419-85f9-74c42e6f8695"}

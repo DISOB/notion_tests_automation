@@ -1,0 +1,10 @@
+[32mINFO    [0m client.common.base_class:base_class.py:17 
+
+
+REQUEST METHOD: POST
+REQUEST URL: https://api.notion.com/v1/search
+REQUEST HEADERS: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer INVALID_TOKEN', 'Notion-Version': '2022-06-28', 'Content-Type': 'application/json', 'Content-Length': '161'}
+REQUEST BODY: b'{"query": "Search here", "page_size": 10, "sort": {"direction": "ascending", "timestamp": "last_edited_time"}, "filter": {"value": "page", "property": "object"}}'
+
+RESPONSE STATUS CODE: 401
+RESPONSE BODY: {"object":"error","status":401,"code":"unauthorized","message":"API token is invalid.","request_id":"d69fdca3-9505-4c5c-b352-72c3bda89da6"}

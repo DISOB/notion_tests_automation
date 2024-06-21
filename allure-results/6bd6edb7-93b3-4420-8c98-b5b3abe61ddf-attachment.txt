@@ -1,0 +1,10 @@
+[32mINFO    [0m client.common.base_class:base_class.py:17 
+
+
+REQUEST METHOD: GET
+REQUEST URL: https://api.notion.com/v1/users/4f2bb362-523d-4c44-b903-26d89eef6348
+REQUEST HEADERS: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer secret_5Lpj2BEAhzdIEzoXXGPZRDyvkHCoAT4Ms6hyxzuIesM', 'Notion-Version': '2022-06-28', 'Content-Type': 'application/json'}
+REQUEST BODY: None
+
+RESPONSE STATUS CODE: 200
+RESPONSE BODY: {"object":"user","id":"4f2bb362-523d-4c44-b903-26d89eef6348","name":"Maxim Stoletov","avatar_url":null,"type":"person","person":{},"request_id":"3f54ee1a-c9a0-439e-95c0-c237d1aade8f"}

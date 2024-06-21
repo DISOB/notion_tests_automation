@@ -1,0 +1,10 @@
+[32mINFO    [0m client.common.base_class:base_class.py:17 
+
+
+REQUEST METHOD: PATCH
+REQUEST URL: https://api.notion.com/v1/pages/d6f3fc9a49424ce09235c35ec97f1506
+REQUEST HEADERS: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer secret_5Lpj2BEAhzdIEzoXXGPZRDyvkHCoAT4Ms6hyxzuIesM', 'Notion-Version': '2022-06-28', 'Content-Type': 'application/json', 'Content-Length': '59'}
+REQUEST BODY: b'{"properties": {"title": {"title": [{"text": "String\'"}]}}}'
+
+RESPONSE STATUS CODE: 400
+RESPONSE BODY: {"object":"error","status":400,"code":"validation_error","message":"body failed validation. Fix one:\nbody.properties.title.title[0].text should be an object, instead was `\"String'\"`.\nbody.properties.title.title[0].mention should be defined, instead was `undefined`.\nbody.properties.title.title[0].equation should be defined, instead was `undefined`.","request_id":"ce3466b3-42f1-4d2a-86d3-9b916cb2b8c1"}

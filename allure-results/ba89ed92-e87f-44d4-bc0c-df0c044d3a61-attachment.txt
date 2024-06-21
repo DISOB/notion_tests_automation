@@ -1,0 +1,10 @@
+[32mINFO    [0m client.common.base_class:base_class.py:17 
+
+
+REQUEST METHOD: PATCH
+REQUEST URL: https://api.notion.com/v1/databases/d1a4e4084ddb499cab7d9496ede4855e
+REQUEST HEADERS: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer INVALID_TOKEN', 'Notion-Version': '2022-06-28', 'Content-Type': 'application/json', 'Content-Length': '289'}
+REQUEST BODY: b'{"properties": {"status": {"select": {"options": [{"id": "not-started", "name": "Not started", "color": "default"}, {"id": "in-progress", "name": "In progress", "color": "blue"}, {"id": "done", "name": "Done", "color": "green"}, {"id": "archived", "name": "Archived", "color": "gray"}]}}}}'
+
+RESPONSE STATUS CODE: 401
+RESPONSE BODY: {"object":"error","status":401,"code":"unauthorized","message":"API token is invalid.","request_id":"6981c3ba-aec9-4e5f-87ed-ba70d6c5c55b"}

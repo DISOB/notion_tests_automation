@@ -1,0 +1,10 @@
+[32mINFO    [0m client.common.base_class:base_class.py:17 
+
+
+REQUEST METHOD: PATCH
+REQUEST URL: https://api.notion.com/v1/blocks/a8e123579acf4820b628b17fee973877
+REQUEST HEADERS: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer secret_5Lpj2BEAhzdIEzoXXGPZRDyvkHCoAT4Ms6hyxzuIesM', 'Notion-Version': '2022-06-28', 'Content-Type': 'application/json', 'Content-Length': '77'}
+REQUEST BODY: b'{"paragraph": {"rich_text": [{"text": {"content": "Block id here (3822)"}}]}}'
+
+RESPONSE STATUS CODE: 200
+RESPONSE BODY: {"object":"block","id":"a8e12357-9acf-4820-b628-b17fee973877","parent":{"type":"page_id","page_id":"9a6a7be7-edd3-49f5-88c9-f066965d731c"},"created_time":"2024-06-16T13:31:00.000Z","last_edited_time":"2024-06-20T16:36:00.000Z","created_by":{"object":"user","id":"4f2bb362-523d-4c44-b903-26d89eef6348"},"last_edited_by":{"object":"user","id":"360b4f56-f265-48dd-b844-fe5dc91d1b41"},"has_children":false,"archived":false,"in_trash":false,"type":"paragraph","paragraph":{"rich_text":[{"type":"text","text":{"content":"Block id here (3822)","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Block id here (3822)","href":null}],"color":"default"},"request_id":"b8706a72-edae-48bf-b43e-bda5b12a6925"}
